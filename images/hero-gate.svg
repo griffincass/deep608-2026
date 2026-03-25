@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D2018"/>
+      <stop offset="100%" style="stop-color:#2D5A3F"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1B3A2D" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.4"/>
+  <!-- Gate silhouette -->
+  <rect x="760" y="200" width="400" height="520" rx="4" fill="none" stroke="#D4A017" stroke-width="3" opacity="0.3"/>
+  <rect x="760" y="200" width="188" height="520" rx="4" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.2"/>
+  <rect x="972" y="200" width="188" height="520" rx="4" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.2"/>
+  <!-- Arch -->
+  <path d="M 760 340 Q 960 180 1160 340" fill="none" stroke="#D4A017" stroke-width="3" opacity="0.3"/>
+  <!-- Torches -->
+  <circle cx="740" cy="320" r="12" fill="#D4A017" opacity="0.4"/>
+  <circle cx="1180" cy="320" r="12" fill="#D4A017" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="660" y="800" width="600" height="120" rx="8" fill="rgba(0,0,0,0.5)"/>
+  <text x="960" y="847" font-family="Georgia, serif" font-size="20" fill="#D4A017" text-anchor="middle" font-weight="bold" letter-spacing="3">REPLACE WITH: hero-gate.jpg</text>
+  <text x="960" y="880" font-family="Georgia, serif" font-size="14" fill="#8B7D6B" text-anchor="middle" font-style="italic">Prompt: "Cinematic Jurassic Park wooden gate at night with torches,</text>
+  <text x="960" y="900" font-family="Georgia, serif" font-size="14" fill="#8B7D6B" text-anchor="middle" font-style="italic">fog, jungle silhouettes, movie poster style, dark moody lighting, 16:9"</text>
+</svg>

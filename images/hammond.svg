@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A"/>
+      <stop offset="100%" style="stop-color:#2A1F0F"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Person silhouette -->
+  <ellipse cx="400" cy="185" rx="65" ry="72" fill="#3A2A12" opacity="0.7"/>
+  <path d="M 285 580 Q 300 360 400 340 Q 500 360 515 580 Z" fill="#3A2A12" opacity="0.7"/>
+  <!-- Hat brim -->
+  <ellipse cx="400" cy="128" rx="88" ry="18" fill="#4A3A1A" opacity="0.6"/>
+  <rect x="345" y="70" width="110" height="62" rx="8" fill="#3A2A10" opacity="0.6"/>
+  <!-- Amber glow -->
+  <ellipse cx="400" cy="300" rx="160" ry="200" fill="#D4A017" opacity="0.04"/>
+  <!-- Label -->
+  <rect x="60" y="460" width="680" height="110" rx="8" fill="rgba(0,0,0,0.65)"/>
+  <text x="400" y="500" font-family="Georgia, serif" font-size="16" fill="#D4A017" text-anchor="middle" font-weight="bold" letter-spacing="2">REPLACE WITH: hammond.jpg</text>
+  <text x="400" y="528" font-family="Georgia, serif" font-size="11.5" fill="#8B7D6B" text-anchor="middle" font-style="italic">"John Hammond in white suit, gesturing grandly,</text>
+  <text x="400" y="548" font-family="Georgia, serif" font-size="11.5" fill="#8B7D6B" text-anchor="middle" font-style="italic">warm amber lighting, cinematic portrait, painted illustration style"</text>
+</svg>

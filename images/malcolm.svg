@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0A0A0A"/>
+      <stop offset="100%" style="stop-color:#1A1410"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Reclining silhouette -->
+  <ellipse cx="400" cy="210" rx="58" ry="64" fill="#1A1A1A" opacity="0.8"/>
+  <path d="M 180 520 Q 260 380 400 360 Q 540 380 640 460 L 660 520 Z" fill="#1A1A1A" opacity="0.8"/>
+  <!-- Sunglasses -->
+  <rect x="355" y="216" width="40" height="22" rx="10" fill="#0A0A0A" stroke="#D4A017" stroke-width="1.5" opacity="0.7"/>
+  <rect x="405" y="216" width="40" height="22" rx="10" fill="#0A0A0A" stroke="#D4A017" stroke-width="1.5" opacity="0.7"/>
+  <line x1="395" y1="227" x2="405" y2="227" stroke="#D4A017" stroke-width="1.5" opacity="0.7"/>
+  <!-- Amber accent light -->
+  <ellipse cx="500" cy="280" rx="140" ry="180" fill="#D4A017" opacity="0.04"/>
+  <!-- Label -->
+  <rect x="60" y="460" width="680" height="110" rx="8" fill="rgba(0,0,0,0.7)"/>
+  <text x="400" y="500" font-family="Georgia, serif" font-size="16" fill="#D4A017" text-anchor="middle" font-weight="bold" letter-spacing="2">REPLACE WITH: malcolm.jpg</text>
+  <text x="400" y="528" font-family="Georgia, serif" font-size="11.5" fill="#8B7D6B" text-anchor="middle" font-style="italic">"Jeff Goldblum as Ian Malcolm, lounging with sunglasses,</text>
+  <text x="400" y="548" font-family="Georgia, serif" font-size="11.5" fill="#8B7D6B" text-anchor="middle" font-style="italic">dramatic amber lighting, cinematic painted illustration, dark background"</text>
+</svg>
