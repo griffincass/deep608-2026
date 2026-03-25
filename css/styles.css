@@ -350,6 +350,7 @@ h1, h2, h3 { font-family: 'Oswald', 'Impact', sans-serif; }
   color: #C8C0B0;
   margin-bottom: 0.75rem;
 }
+.light .body-text { color: #4A3F35; }
 .body-text.muted { color: #9A8E82; }
 
 .source-line {
@@ -578,8 +579,7 @@ h1, h2, h3 { font-family: 'Oswald', 'Impact', sans-serif; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
-  flex: 1;
-  min-height: 0;
+  align-items: start;
 }
 .four-cards {
   display: grid;
@@ -588,6 +588,20 @@ h1, h2, h3 { font-family: 'Oswald', 'Impact', sans-serif; }
   flex: 1;
   min-height: 0;
 }
+/* S5 / S7: center content vertically instead of stretching cards */
+#s5 .container,
+#s7 .container {
+  justify-content: center;
+}
+#s5 .card {
+  padding: 1.75rem 2rem;
+}
+.card-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
 @media (max-width: 900px) {
   .three-cards { grid-template-columns: 1fr; gap: 0.75rem; }
   .four-cards  { grid-template-columns: 1fr; gap: 0.75rem; }
@@ -641,24 +655,22 @@ h1, h2, h3 { font-family: 'Oswald', 'Impact', sans-serif; }
 .cp-flow {
   display: flex;
   align-items: stretch;
-  gap: 0.4rem;
-  flex: 1;
-  min-height: 0;
+  gap: 0.6rem;
   overflow: hidden;
 }
 .cp-card {
   flex: 1;
   border-radius: 8px;
-  padding: 1.1rem 0.75rem;
+  padding: 1.5rem 1rem;
   text-align: center;
   border: 2px solid;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 .cp-card:hover { transform: translateY(-3px); }
-.cp-element { font-family: 'Oswald', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; margin-bottom: 0.5rem; }
-.cp-controls { font-size: 0.75rem; font-weight: 600; color: var(--sand); margin-bottom: 0.35rem; }
-.cp-label    { font-family: 'Oswald', sans-serif; font-size: 0.92rem; font-weight: 700; margin-bottom: 0.3rem; }
-.cp-caption  { font-size: 0.72rem; font-style: italic; color: var(--sand); }
+.cp-element { font-family: 'Oswald', sans-serif; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.15em; margin-bottom: 0.5rem; }
+.cp-controls { font-size: 0.82rem; font-weight: 600; color: var(--sand); margin-bottom: 0.35rem; }
+.cp-label    { font-family: 'Oswald', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem; }
+.cp-caption  { font-size: 0.8rem; font-style: italic; color: var(--sand); }
 .cp-card.earth { background: rgba(27,58,45,0.12);  border-color: var(--jungle-fern); }
 .cp-card.earth .cp-element, .cp-card.earth .cp-label { color: var(--jungle-canopy); }
 .cp-card.fire  { background: rgba(178,34,34,0.09); border-color: var(--danger); }
@@ -669,7 +681,7 @@ h1, h2, h3 { font-family: 'Oswald', 'Impact', sans-serif; }
 .cp-card.water .cp-element, .cp-card.water .cp-label { color: #5BA3D0; }
 .cp-card.heart { background: rgba(212,160,23,0.09); border-color: var(--amber); }
 .cp-card.heart .cp-element, .cp-card.heart .cp-label { color: var(--amber); }
-.cp-arrow { font-size: 1.25rem; color: var(--sand); display: flex; align-items: center; flex-shrink: 0; }
+.cp-arrow { font-size: 1.5rem; color: var(--sand); display: flex; align-items: center; flex-shrink: 0; }
 .cp-callout {
   background: rgba(212,160,23,0.09);
   border: 1.5px solid var(--amber);
