@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CMDB or It Didn't Happen: Deep 608 | Griffin Cass</title>
+  <title>CMDB or It Didn't Happen — Deep 608 | Griffin Cass</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
     <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 4l-6 6 6 6"/></svg>
   </button>
   <div id="slide-info">
-    <span id="slide-num">1 / 18</span>
+    <span id="slide-num">01 / 18</span>
     <div id="step-track" aria-hidden="true"></div>
   </div>
   <button id="btn-next" class="ctrl-btn" aria-label="Next">
@@ -30,191 +30,175 @@
   </button>
 </footer>
 
-<div id="key-hint" aria-hidden="true">← → arrows &nbsp;•&nbsp; space to advance &nbsp;•&nbsp; F fullscreen</div>
+<div id="key-hint" aria-hidden="true">&#8592; &#8594; arrows &nbsp;&bull;&nbsp; space to advance &nbsp;&bull;&nbsp; F fullscreen</div>
 
 <main id="deck">
 
-  <!-- ==========================================
-       S1: HERO
-       ========================================== -->
-  <section id="s1" class="slide dark hero-slide" data-section-label="Intro">
-    <img src="images/hero-gate.svg" alt="" class="hero-bg-placeholder" aria-hidden="true">
-    <div class="hero-overlay" aria-hidden="true"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Deep 608 &nbsp;•&nbsp; Madison, WI &nbsp;•&nbsp; April 2026</p>
-      <h1 id="hero-title">CMDB or It Didn't Happen</h1>
-      <p id="hero-subtitle">Why Modern Tech Demands Yesterday's Fundamentals</p>
-      <p class="hero-author">Griffin Cass &nbsp;|&nbsp; Information Security Architect &nbsp;|&nbsp; UW Credit Union</p>
+  <!-- S1: HERO -->
+  <section class="slide slide--dark slide--hero" data-section-label="Intro">
+    <img src="images/hero-gate.svg" alt="" class="hero__bg" aria-hidden="true">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Deep 608 &nbsp;&bull;&nbsp; Madison, WI &nbsp;&bull;&nbsp; April 2026</p>
+      <h1 class="hero__title" id="hero-title">CMDB or It Didn't Happen</h1>
+      <p class="hero__subtitle">Why Modern Tech Demands Yesterday's Fundamentals</p>
+      <p class="hero__author">Griffin Cass &nbsp;|&nbsp; Information Security Architect &nbsp;|&nbsp; UW Credit Union</p>
     </div>
-    <div class="scroll-arrow" aria-hidden="true">
+    <div class="hero__arrow" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </div>
   </section>
 
-  <!-- ==========================================
-       S2: We Spared No Expense
-       ========================================== -->
-  <section id="s2" class="slide dark" data-section-label="Spared No Expense">
-    <div class="container">
-      <div class="two-col-layout">
-        <div class="col-text">
-          <blockquote class="big-quote" data-step="1">"We spared no expense."</blockquote>
-          <p class="quote-attribution" data-step="1">John Hammond, right before everything went wrong</p>
-          <p class="body-text" data-step="2">Hammond built the most advanced theme park on Earth. Cutting-edge genetic engineering. Automated feeding systems. Electric fences rated for 10,000 volts.</p>
-          <p class="big-punchline" data-step="3">But he never counted his dinosaurs.</p>
-          <p class="body-text muted" data-step="4">Sound familiar? We buy the best EDR, SIEM, and CASB money can get. Then someone asks "how many assets do we have?" and the room goes quiet.</p>
+  <!-- S2: Spared No Expense -->
+  <section class="slide slide--dark" data-section-label="Spared No Expense">
+    <div class="deck-container">
+      <div class="two-col">
+        <div>
+          <blockquote class="quote quote--amber" data-step="1">"We spared no expense."</blockquote>
+          <p class="attribution" data-step="1">John Hammond, right before everything went wrong</p>
+          <p class="body" data-step="2">Hammond built the most advanced theme park on Earth. Cutting-edge genetic engineering. Automated feeding systems. Electric fences rated for 10,000 volts.</p>
+          <p class="punchline" data-step="3">But he never counted his dinosaurs.</p>
+          <p class="body body--muted" data-step="4">Sound familiar? We buy the best EDR, SIEM, and CASB money can get. Then someone asks "how many assets do we have?" and the room goes quiet.</p>
         </div>
-        <div class="col-image" data-step="1">
+        <div class="col-visual" data-step="1">
           <img src="images/hammond.svg" alt="John Hammond" class="slide-image">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S3: Jenga Tower
-       ========================================== -->
-  <section id="s3" class="slide light" data-section-label="The Stack">
-    <div class="container">
-      <h2 class="section-headline dark">We keep stacking.</h2>
-      <p class="section-sub dark-sub">Advanced capabilities on a foundation held together by institutional knowledge.</p>
-      <div class="jenga-wrapper">
-        <div class="jenga-tower">
-          <div class="jenga-block jenga-top" data-step="5">
-            <span class="jenga-label">Agentic workflows with broad permissions</span>
-            <span class="jenga-warn" aria-hidden="true">⚠</span>
+  <!-- S3: Jenga Tower -->
+  <section class="slide slide--light" data-section-label="The Stack">
+    <div class="deck-container">
+      <h2 class="headline headline--dark">We keep stacking.</h2>
+      <p class="subhead">Advanced capabilities on a foundation held together by institutional knowledge.</p>
+      <div class="jenga">
+        <div class="jenga__stack">
+          <div class="jenga__block jenga__block--top" data-step="5">
+            <span>Agentic workflows with broad permissions</span>
+            <span class="jenga__warn" aria-hidden="true">&#9888;</span>
           </div>
-          <div class="jenga-block jenga-4" data-step="4">
-            <span class="jenga-label">Copilot / AI tooling</span>
-            <span class="jenga-warn" aria-hidden="true">⚠</span>
+          <div class="jenga__block jenga__block--4" data-step="4">
+            <span>Copilot / AI tooling</span>
+            <span class="jenga__warn" aria-hidden="true">&#9888;</span>
           </div>
-          <div class="jenga-block jenga-3" data-step="3">
-            <span class="jenga-label">Cloud migration</span>
+          <div class="jenga__block jenga__block--3" data-step="3">
+            <span>Cloud migration</span>
           </div>
-          <div class="jenga-block jenga-2" data-step="2">
-            <span class="jenga-label">Vulnerability scanning (maybe quarterly?)</span>
+          <div class="jenga__block jenga__block--2" data-step="2">
+            <span>Vulnerability scanning (maybe quarterly?)</span>
           </div>
-          <div class="jenga-block jenga-base" data-step="1">
-            <span class="jenga-label">Asset inventory from 2019</span>
+          <div class="jenga__block jenga__block--base" data-step="1">
+            <span>Asset inventory from 2019</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S4: 58%
-       ========================================== -->
-  <section id="s4" class="slide dark" data-section-label="58%">
-    <div class="container centered-v">
-      <div class="big-stat amber count-up" data-target="58" data-suffix="%">0%</div>
-      <p class="stat-subtitle" data-step="1">of all known initial access in breaches comes from three things we already know how to fix.</p>
-      <div class="pills-row" role="list">
-        <div class="pill green" data-step="2" role="listitem">Stolen credentials <span>22%</span></div>
-        <div class="pill amber" data-step="3" role="listitem">Unpatched vulns <span>20%</span></div>
-        <div class="pill red"   data-step="4" role="listitem">Phishing <span>16%</span></div>
+  <!-- S4: 58% -->
+  <section class="slide slide--dark" data-section-label="58%">
+    <div class="deck-container centered">
+      <div class="big-stat big-stat--amber count-up" data-target="58" data-suffix="%">0%</div>
+      <p class="stat-sub" data-step="1">of all known initial access in breaches comes from three things we already know how to fix.</p>
+      <div class="pills" role="list">
+        <div class="pill pill--fern" data-step="2" role="listitem">Stolen credentials <span>22%</span></div>
+        <div class="pill pill--amber" data-step="3" role="listitem">Unpatched vulns <span>20%</span></div>
+        <div class="pill pill--danger" data-step="4" role="listitem">Phishing <span>16%</span></div>
       </div>
-      <div class="hazard-stripe inner-stripe" aria-hidden="true" data-step="5"></div>
+      <div class="hazard hazard--full" aria-hidden="true" data-step="5"></div>
       <p class="jp-quote" data-step="5">"The T-Rex broke through the fence because of a configuration failure. The fences were off for hours before anyone noticed."</p>
-      <p class="source-line" data-step="5">Source: Verizon DBIR 2025, 12,195 breaches across 139 countries</p>
+      <p class="source" data-step="5">Source: Verizon DBIR 2025, 12,195 breaches across 139 countries</p>
     </div>
   </section>
 
-  <!-- ==========================================
-       S5: Three Ways
-       ========================================== -->
-  <section id="s5" class="slide light" data-section-label="How It Fell Apart">
-    <div class="container">
-      <h2 class="section-headline dark">Three Ways Jurassic Park Fell Apart</h2>
-      <div class="three-cards">
-        <div class="card card-red" data-step="1">
-          <span class="card-icon">&#9889;</span>
-          <h3>"The fences went down."</h3>
-          <p class="card-sub">The patching race.</p>
-          <p>Attackers mass-exploit CISA KEV vulns within 5 days. Orgs take 55 days to patch half their critical vulns. Almost half of perimeter-device vulns go completely unresolved.</p>
-          <p class="card-stat" style="color: var(--danger) !important;">5 days to exploit &bull; 55 days to patch</p>
+
+  <!-- S5: Three Ways -->
+  <section class="slide slide--light" data-section-label="How It Fell Apart">
+    <div class="deck-container">
+      <h2 class="headline headline--dark">Three Ways Jurassic Park Fell Apart</h2>
+      <div class="grid-3">
+        <div class="card card--danger" data-step="1">
+          <div class="card__label">The patching race</div>
+          <div class="card__title">"The fences went down."</div>
+          <p class="card__body">Attackers mass-exploit CISA KEV vulns within 5 days. Orgs take 55 days to patch half their critical vulns. Almost half of perimeter-device vulns go completely unresolved.</p>
+          <p class="card__stat" style="color: var(--danger);">5 days to exploit &bull; 55 days to patch</p>
         </div>
-        <div class="card card-amber" data-step="2">
-          <span class="card-icon">&#128273;</span>
-          <h3>"Nedry was the only one with the keys."</h3>
-          <p class="card-sub">The configuration gap.</p>
-          <p>95% of cloud security failures are misconfigurations from human error. CIS Safeguard 4.1 (Secure Configuration) is the single most effective defense.</p>
-          <p class="card-stat" style="color: var(--amber) !important;">95% of cloud failures = misconfig</p>
+        <div class="card card--amber" data-step="2">
+          <div class="card__label">The configuration gap</div>
+          <div class="card__title">"Nedry was the only one with the keys."</div>
+          <p class="card__body">95% of cloud security failures are misconfigurations from human error. CIS Safeguard 4.1 (Secure Configuration) is the single most effective defense.</p>
+          <p class="card__stat" style="color: var(--amber);">95% of cloud failures = misconfig</p>
         </div>
-        <div class="card card-green" data-step="3">
-          <span class="card-icon">&#127959;</span>
-          <h3>"A theme park, not an operating model."</h3>
-          <p class="card-sub">The cost of complexity.</p>
-          <p>IBM found piecemeal, reactive programs add $1.44M to breach costs. Systematic frameworks save $1.9M per breach and resolve incidents 80 days faster.</p>
-          <p class="card-stat" style="color: var(--jungle-fern) !important;">$1.9M saved per breach with frameworks</p>
+        <div class="card card--fern" data-step="3">
+          <div class="card__label">The cost of complexity</div>
+          <div class="card__title">"A theme park, not an operating model."</div>
+          <p class="card__body">IBM found piecemeal, reactive programs add $1.44M to breach costs. Systematic frameworks save $1.9M per breach and resolve incidents 80 days faster.</p>
+          <p class="card__stat" style="color: var(--fern);">$1.9M saved per breach with frameworks</p>
         </div>
       </div>
-      <p class="source-line" data-step="3">Source: Verizon DBIR 2024/2025, SOCRadar, OWASP, IBM Cost of a Data Breach 2025</p>
+      <p class="source" data-step="3">Source: Verizon DBIR 2024/2025, SOCRadar, OWASP, IBM Cost of a Data Breach 2025</p>
     </div>
   </section>
 
-  <!-- ==========================================
-       S6: CIS Reveal
-       ========================================== -->
-  <section id="s6" class="slide dark" data-section-label="The System">
-    <div class="container">
-      <h2 class="section-headline">What if there was a system that could actually run the park?</h2>
+  <!-- S6: CIS Reveal -->
+  <section class="slide slide--dark" data-section-label="The System">
+    <div class="deck-container">
+      <h2 class="headline headline--amber">What if there was a system that could actually run the park?</h2>
       <ul class="cis-list" role="list">
-        <li class="cis-item" data-step="1"><span class="arrow-bullet green" aria-hidden="true">→</span> Defends against <strong>77%</strong> of the most common attack techniques</li>
-        <li class="cis-item" data-step="2"><span class="arrow-bullet amber" aria-hidden="true">→</span> Maps to <strong>25+ regulatory frameworks</strong> you're already juggling</li>
-        <li class="cis-item" data-step="3"><span class="arrow-bullet green" aria-hidden="true">→</span> Tells you exactly <strong>what to do first, second, and third</strong></li>
-        <li class="cis-item" data-step="4"><span class="arrow-bullet amber" aria-hidden="true">→</span> Has <strong>free tools</strong> to get started today</li>
-        <li class="cis-item" data-step="5"><span class="arrow-bullet green" aria-hidden="true">→</span> Gives your board a <strong>single number</strong> they can track</li>
+        <li class="cis-item" data-step="1"><span class="cis-item__arrow cis-item__arrow--fern" aria-hidden="true">&rarr;</span> Defends against <strong>77%</strong> of the most common attack techniques</li>
+        <li class="cis-item" data-step="2"><span class="cis-item__arrow cis-item__arrow--amber" aria-hidden="true">&rarr;</span> Maps to <strong>25+ regulatory frameworks</strong> you're already juggling</li>
+        <li class="cis-item" data-step="3"><span class="cis-item__arrow cis-item__arrow--fern" aria-hidden="true">&rarr;</span> Tells you exactly <strong>what to do first, second, and third</strong></li>
+        <li class="cis-item" data-step="4"><span class="cis-item__arrow cis-item__arrow--amber" aria-hidden="true">&rarr;</span> Has <strong>free tools</strong> to get started today</li>
+        <li class="cis-item" data-step="5"><span class="cis-item__arrow cis-item__arrow--fern" aria-hidden="true">&rarr;</span> Gives your board a <strong>single number</strong> they can track</li>
       </ul>
-      <div class="hazard-stripe inner-stripe" aria-hidden="true" data-step="6"></div>
-      <div class="cis-tada" data-step="6">
-        <p class="cis-name">CIS Controls v8.1</p>
-        <p class="cis-tagline">18 Controls &nbsp;•&nbsp; 153 Safeguards &nbsp;•&nbsp; 3 Implementation Groups</p>
+      <div class="hazard hazard--full" aria-hidden="true" data-step="6"></div>
+      <div class="cis-reveal" data-step="6">
+        <p class="cis-reveal__name">CIS Controls v8.1</p>
+        <p class="cis-reveal__tagline">18 Controls &nbsp;&bull;&nbsp; 153 Safeguards &nbsp;&bull;&nbsp; 3 Implementation Groups</p>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S7: Captain Planet
-       ========================================== -->
-  <section id="s7" class="slide light" data-section-label="Captain Planet">
-    <div class="container">
-      <h2 class="section-headline dark">By your powers combined…</h2>
-      <p class="section-sub dark-sub">Captain Planet needed all five rings in order. CIS works the same way.</p>
+  <!-- S7: Captain Planet -->
+  <section class="slide slide--light" data-section-label="Captain Planet">
+    <div class="deck-container">
+      <h2 class="headline headline--dark">By your powers combined&hellip;</h2>
+      <p class="subhead">Captain Planet needed all five rings in order. CIS works the same way.</p>
       <div class="cp-flow" role="list">
-        <div class="cp-card earth" data-step="1" role="listitem">
-          <div class="cp-element">EARTH</div>
-          <div class="cp-controls">Controls 1–2</div>
-          <div class="cp-label">Inventory</div>
-          <div class="cp-caption">The foundation</div>
+        <div class="cp-card cp-card--earth" data-step="1" role="listitem">
+          <div class="cp-card__element">EARTH</div>
+          <div class="cp-card__controls">Controls 1&ndash;2</div>
+          <div class="cp-card__label">Inventory</div>
+          <div class="cp-card__caption">The foundation</div>
         </div>
-        <div class="cp-arrow" data-step="2" aria-hidden="true">→</div>
-        <div class="cp-card fire" data-step="2" role="listitem">
-          <div class="cp-element">FIRE</div>
-          <div class="cp-controls">Control 4</div>
-          <div class="cp-label">Config</div>
-          <div class="cp-caption">Harden what exists</div>
+        <div class="cp-arrow" data-step="2" aria-hidden="true">&rarr;</div>
+        <div class="cp-card cp-card--fire" data-step="2" role="listitem">
+          <div class="cp-card__element">FIRE</div>
+          <div class="cp-card__controls">Control 4</div>
+          <div class="cp-card__label">Config</div>
+          <div class="cp-card__caption">Harden what exists</div>
         </div>
-        <div class="cp-arrow" data-step="3" aria-hidden="true">→</div>
-        <div class="cp-card wind" data-step="3" role="listitem">
-          <div class="cp-element">WIND</div>
-          <div class="cp-controls">Controls 5–6</div>
-          <div class="cp-label">Access</div>
-          <div class="cp-caption">Control who touches it</div>
+        <div class="cp-arrow" data-step="3" aria-hidden="true">&rarr;</div>
+        <div class="cp-card cp-card--wind" data-step="3" role="listitem">
+          <div class="cp-card__element">WIND</div>
+          <div class="cp-card__controls">Controls 5&ndash;6</div>
+          <div class="cp-card__label">Access</div>
+          <div class="cp-card__caption">Control who touches it</div>
         </div>
-        <div class="cp-arrow" data-step="4" aria-hidden="true">→</div>
-        <div class="cp-card water" data-step="4" role="listitem">
-          <div class="cp-element">WATER</div>
-          <div class="cp-controls">Control 7</div>
-          <div class="cp-label">Vulns</div>
-          <div class="cp-caption">Find &amp; fix weaknesses</div>
+        <div class="cp-arrow" data-step="4" aria-hidden="true">&rarr;</div>
+        <div class="cp-card cp-card--water" data-step="4" role="listitem">
+          <div class="cp-card__element">WATER</div>
+          <div class="cp-card__controls">Control 7</div>
+          <div class="cp-card__label">Vulns</div>
+          <div class="cp-card__caption">Find &amp; fix weaknesses</div>
         </div>
-        <div class="cp-arrow" data-step="5" aria-hidden="true">→</div>
-        <div class="cp-card heart" data-step="5" role="listitem">
-          <div class="cp-element">HEART</div>
-          <div class="cp-controls">Controls 3, 8, 14</div>
-          <div class="cp-label">Data, Logs, Training</div>
-          <div class="cp-caption">The one everyone skips</div>
+        <div class="cp-arrow" data-step="5" aria-hidden="true">&rarr;</div>
+        <div class="cp-card cp-card--heart" data-step="5" role="listitem">
+          <div class="cp-card__element">HEART</div>
+          <div class="cp-card__controls">Controls 3, 8, 14</div>
+          <div class="cp-card__label">Data, Logs, Training</div>
+          <div class="cp-card__caption">The one everyone skips</div>
         </div>
       </div>
       <div class="cp-callout" data-step="6">
@@ -223,226 +207,212 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       S8: CMDB
-       ========================================== -->
-  <section id="s8" class="slide light" data-section-label="CMDB">
-    <div class="container">
-      <h2 class="section-headline dark">"They never counted the dinosaurs."</h2>
-      <p class="section-sub dark-sub">What CIS actually requires, and what Grant's counting lesson tells us.</p>
-      <div class="two-col-cards">
-        <div class="card card-green" data-step="1">
-          <h3>What CIS actually requires</h3>
+  <!-- S8: CMDB -->
+  <section class="slide slide--light" data-section-label="CMDB">
+    <div class="deck-container">
+      <h2 class="headline headline--dark">"They never counted the dinosaurs."</h2>
+      <p class="subhead">What CIS actually requires, and what Grant's counting lesson tells us.</p>
+      <div class="grid-2">
+        <div class="card card--fern" data-step="1">
+          <div class="card__title">What CIS actually requires</div>
           <ul>
             <li><strong>Safeguard 1.1:</strong> Every asset (devices, servers, network gear, IoT, cloud instances, VMs) with address, owner, department, and approval status.</li>
             <li><strong>Safeguard 1.2:</strong> Address unauthorized assets weekly.</li>
             <li><strong>Safeguard 2.1:</strong> Inventory all software, including SaaS, AI tools, and anything with a login.</li>
           </ul>
         </div>
-        <div class="card card-amber" data-step="2">
-          <h3>Grant's counting lesson</h3>
-          <p>"InGen counted 238 animals. Grant found more. Your inventory has the same blind spots:"</p>
+        <div class="card card--amber" data-step="2">
+          <div class="card__title">Grant's counting lesson</div>
+          <p class="card__body">"InGen counted 238 animals. Grant found more. Your inventory has the same blind spots:"</p>
           <ul>
             <li>Zero-day drops? Query by software version.</li>
             <li>CISO asks about scope? Filter by department.</li>
             <li>Auditor wants evidence? Export by approval status.</li>
           </ul>
-          <p class="card-stat">62% of breach victims didn't know they were vulnerable.</p>
-          <p class="source-line">Source: Ponemon/ServiceNow</p>
+          <p class="card__stat" style="color: var(--amber);">62% of breach victims didn't know they were vulnerable.</p>
+          <p class="source">Source: Ponemon/ServiceNow</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S9: Life Finds a Way
-       ========================================== -->
-  <section id="s9" class="slide dark" data-section-label="AI &amp; Copilot">
-    <div class="container">
-      <div class="two-col-layout">
-        <div class="col-text">
-          <blockquote class="big-quote" data-step="1">"Life, uh… finds a way."</blockquote>
-          <p class="quote-attribution" data-step="1">Dr. Ian Malcolm, on ungoverned systems</p>
-          <p class="body-text" data-step="2">The dinosaurs were engineered to be all-female. They bred anyway. Your AI tools were scoped to be read-only. They're writing now.</p>
-          <p class="big-punchline" data-step="3">Your copilot is indexing data you haven't classified.</p>
+
+  <!-- S9: Life Finds a Way -->
+  <section class="slide slide--dark" data-section-label="AI &amp; Copilot">
+    <div class="deck-container">
+      <div class="two-col">
+        <div>
+          <blockquote class="quote quote--amber" data-step="1">"Life, uh&hellip; finds a way."</blockquote>
+          <p class="attribution" data-step="1">Dr. Ian Malcolm, on ungoverned systems</p>
+          <p class="body" data-step="2">The dinosaurs were engineered to be all-female. They bred anyway. Your AI tools were scoped to be read-only. They're writing now.</p>
+          <p class="punchline" data-step="3">Your copilot is indexing data you haven't classified.</p>
           <ul class="bullet-list">
             <li data-step="4">Agentic workflows are getting broad permissions before anyone defines "appropriate access."</li>
             <li data-step="5">AI tools are adopted faster than your software inventory can track. CIS Safeguard 2.1 says they belong in it.</li>
             <li data-step="6">CIS partnered with Astrix Security to address MCP environments: credential exposure, uncontrolled data flows.
-              <span class="source-line" style="display:block;margin-top:.35rem;">Source: CIS/Astrix Security Partnership 2025</span>
+              <span class="source" style="display:block;margin-top:.35rem;">Source: CIS/Astrix Security Partnership 2025</span>
             </li>
           </ul>
         </div>
-        <div class="col-image">
+        <div class="col-visual">
           <img src="images/malcolm.svg" alt="Ian Malcolm" class="slide-image">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S10: Clever Girl
-       ========================================== -->
-  <section id="s10" class="slide light" data-section-label="Non-Human Identities">
-    <div class="container">
-      <div class="two-col-layout">
-        <div class="col-text">
-          <blockquote class="big-quote dark-quote" data-step="1">"Clever girl."</blockquote>
-          <p class="section-sub dark-sub" data-step="1">The raptors learned to open doors. Your service accounts already have the keys.</p>
-          <div class="big-stat dark count-up" data-step="2" data-target="100" data-suffix=" : 1">0 : 1</div>
-          <p class="stat-subtitle dark" data-step="2">Non-human identities to human identities in a typical enterprise.</p>
-          <div class="card card-red" data-step="3">
-            <p>API keys, service accounts, OAuth tokens, automation credentials</p>
+  <!-- S10: Clever Girl -->
+  <section class="slide slide--light" data-section-label="Non-Human Identities">
+    <div class="deck-container">
+      <div class="two-col">
+        <div>
+          <blockquote class="quote quote--dark" data-step="1">"Clever girl."</blockquote>
+          <p class="subhead" data-step="1">The raptors learned to open doors. Your service accounts already have the keys.</p>
+          <div class="big-stat big-stat--dark count-up" data-step="2" data-target="100" data-suffix=" : 1">0 : 1</div>
+          <p class="stat-sub" data-step="2">Non-human identities to human identities in a typical enterprise.</p>
+          <div class="card card--danger" data-step="3">
+            <p class="card__body">API keys, service accounts, OAuth tokens, automation credentials</p>
           </div>
-          <p class="body-text" data-step="4">Most orgs can tell you every <strong>human</strong> with access. Almost none can tell you every <strong>machine</strong> with access. CIS Control 5.1 (IG1): inventory all accounts. Safeguard 5.5 (IG2): named owner and review date.</p>
-          <p class="source-line" data-step="4">Source: CIS/Astrix Security, "NHIs represent the biggest blind spot in our identity perimeter"</p>
+          <p class="body" data-step="4">Most orgs can tell you every <strong>human</strong> with access. Almost none can tell you every <strong>machine</strong> with access. CIS Control 5.1 (IG1): inventory all accounts. Safeguard 5.5 (IG2): named owner and review date.</p>
+          <p class="source" data-step="4">Source: CIS/Astrix Security, "NHIs represent the biggest blind spot in our identity perimeter"</p>
         </div>
-        <div class="col-image">
+        <div class="col-visual">
           <img src="images/raptor-door.svg" alt="Raptor claw at door handle" class="slide-image">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S11: IG1 Cheat Code
-       ========================================== -->
-  <section id="s11" class="slide light" data-section-label="IG1 Cheat Code">
-    <div class="container">
-      <h2 class="section-headline dark">The IG1 cheat code.</h2>
-      <p class="section-sub dark-sub">56 safeguards. One-third of the framework. No specialist tools required.</p>
+  <!-- S11: IG1 Cheat Code -->
+  <section class="slide slide--light" data-section-label="IG1 Cheat Code">
+    <div class="deck-container deck-container--top">
+      <h2 class="headline headline--dark">The IG1 cheat code.</h2>
+      <p class="subhead">56 safeguards. One-third of the framework. No specialist tools required.</p>
       <div class="s11-layout">
-        <div class="s11-left">
-          <div class="big-stat green count-up" data-step="1" data-target="77" data-suffix="%">0%</div>
-          <p class="stat-subtitle dark" data-step="1">of ATT&amp;CK techniques across the top 5 attack types</p>
+        <div>
+          <div class="big-stat big-stat--fern count-up" data-step="1" data-target="77" data-suffix="%">0%</div>
+          <p class="stat-sub" data-step="1">of ATT&amp;CK techniques across the top 5 attack types</p>
           <p class="stat-note" data-step="1">with commercial off-the-shelf tools, no specialists required</p>
-          <blockquote class="oregon-quote" data-step="7">On the Oregon Trail, the families who packed essentials survived. The ones who overloaded on ammo and skipped medicine died of dysentery.</blockquote>
+          <blockquote class="quote--side" data-step="7">On the Oregon Trail, the families who packed essentials survived. The ones who overloaded on ammo and skipped medicine died of dysentery.</blockquote>
         </div>
         <div class="s11-right">
           <div class="stat-bars">
             <div class="stat-bar-item" data-step="2">
-              <div class="bar-label">Web app hacking</div>
-              <div class="bar-track"><div class="bar-fill green-bar" data-width="86"></div></div>
-              <div class="bar-pct">86%</div>
+              <div class="stat-bar__label">Web app hacking</div>
+              <div class="bar-track"><div class="bar-fill bar-fill--fern" data-width="86"></div></div>
+              <div class="stat-bar__pct">86%</div>
             </div>
             <div class="stat-bar-item" data-step="3">
-              <div class="bar-label">Insider misuse</div>
-              <div class="bar-track"><div class="bar-fill amber-bar" data-width="86"></div></div>
-              <div class="bar-pct">86%</div>
+              <div class="stat-bar__label">Insider misuse</div>
+              <div class="bar-track"><div class="bar-fill bar-fill--amber" data-width="86"></div></div>
+              <div class="stat-bar__pct">86%</div>
             </div>
             <div class="stat-bar-item" data-step="4">
-              <div class="bar-label">Targeted intrusions</div>
-              <div class="bar-track"><div class="bar-fill red-bar" data-width="83"></div></div>
-              <div class="bar-pct">83%</div>
+              <div class="stat-bar__label">Targeted intrusions</div>
+              <div class="bar-track"><div class="bar-fill bar-fill--danger" data-width="83"></div></div>
+              <div class="stat-bar__pct">83%</div>
             </div>
             <div class="stat-bar-item" data-step="5">
-              <div class="bar-label">Ransomware</div>
-              <div class="bar-track"><div class="bar-fill dkgreen-bar" data-width="78"></div></div>
-              <div class="bar-pct">78%</div>
+              <div class="stat-bar__label">Ransomware</div>
+              <div class="bar-track"><div class="bar-fill bar-fill--dark" data-width="78"></div></div>
+              <div class="stat-bar__pct">78%</div>
             </div>
           </div>
-          <p class="source-line" data-step="6">Source: CIS Community Defense Model v2.0, mapped to MITRE ATT&amp;CK</p>
+          <p class="source" data-step="6">Source: CIS Community Defense Model v2.0, mapped to MITRE ATT&amp;CK</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S12: Framework Crosswalk
-       ========================================== -->
-  <section id="s12" class="slide dark" data-section-label="Framework Map">
-    <div class="container">
-      <h2 class="section-headline">One operating system for the whole park.</h2>
-      <p class="section-sub">Hammond needed separate systems for fences, feeding, tracking, and security. You don't.</p>
-      <div class="table-wrapper" data-step="1">
-        <table class="crosswalk-table">
+  <!-- S12: Framework Crosswalk -->
+  <section class="slide slide--dark" data-section-label="Framework Map">
+    <div class="deck-container">
+      <h2 class="headline headline--amber">One operating system for the whole park.</h2>
+      <p class="subhead">Hammond needed separate systems for fences, feeding, tracking, and security. You don't.</p>
+      <div class="table-wrap" data-step="1">
+        <table class="crosswalk">
           <thead>
             <tr><th>CIS Safeguard</th><th>PCI DSS v4</th><th>NIST CSF</th><th>FFIEC</th><th>GLBA</th></tr>
           </thead>
           <tbody>
-            <tr><td>4.1 Secure Config</td><td>Req. 2</td><td>PR.IP-1</td><td>Domain 3</td><td>§314.4(c)</td></tr>
-            <tr><td>5 Account Mgmt</td><td>Req. 8</td><td>PR.AC-1</td><td>Domain 3</td><td>§314.4(c)(3)</td></tr>
-            <tr><td>8 Audit Logs</td><td>Req. 10</td><td>DE.AE</td><td>Domain 3</td><td>§314.4(d)(2)</td></tr>
-            <tr><td>14 Sec. Training</td><td>Req. 12.6</td><td>PR.AT</td><td>Domain 1</td><td>§314.4(e)</td></tr>
+            <tr><td>4.1 Secure Config</td><td>Req. 2</td><td>PR.IP-1</td><td>Domain 3</td><td>&sect;314.4(c)</td></tr>
+            <tr><td>5 Account Mgmt</td><td>Req. 8</td><td>PR.AC-1</td><td>Domain 3</td><td>&sect;314.4(c)(3)</td></tr>
+            <tr><td>8 Audit Logs</td><td>Req. 10</td><td>DE.AE</td><td>Domain 3</td><td>&sect;314.4(d)(2)</td></tr>
+            <tr><td>14 Sec. Training</td><td>Req. 12.6</td><td>PR.AT</td><td>Domain 1</td><td>&sect;314.4(e)</td></tr>
           </tbody>
         </table>
       </div>
       <div class="crosswalk-callout" data-step="2">
         <p><strong>25+ frameworks</strong> mapped in the free CIS Controls Navigator. <strong>All FFIEC member agencies</strong> (incl. NCUA) endorsed CIS.</p>
-        <p class="source-line" style="margin-top:.5rem;">Source: CIS Official Mappings, FFIEC 2019 Joint Statement</p>
+        <p class="source" style="margin-top:.5rem;">Source: CIS Official Mappings, FFIEC 2019 Joint Statement</p>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S13: Business Asks
-       ========================================== -->
-  <section id="s13" class="slide light" data-section-label="Business Asks">
-    <div class="container">
-      <h2 class="section-headline dark">"We want to open the park to visitors."</h2>
-      <p class="section-sub dark-sub">Your leadership has the same asks. CIS already has an answer.</p>
-      <div class="four-cards">
-        <div class="card card-amber" data-step="1">
-          <h3>"We need to adopt AI tools."</h3>
-          <p>Safeguard 2.1: inventory them. 3.1-3.6: classify the data they touch. 8.1-8.3: log what they do. You're not blocking innovation. You're making it auditable.</p>
+
+  <!-- S13: Business Asks -->
+  <section class="slide slide--light" data-section-label="Business Asks">
+    <div class="deck-container">
+      <h2 class="headline headline--dark">"We want to open the park to visitors."</h2>
+      <p class="subhead">Your leadership has the same asks. CIS already has an answer.</p>
+      <div class="grid-2">
+        <div class="card card--amber" data-step="1">
+          <div class="card__title">"We need to adopt AI tools."</div>
+          <p class="card__body">Safeguard 2.1: inventory them. 3.1-3.6: classify the data they touch. 8.1-8.3: log what they do. You're not blocking innovation. You're making it auditable.</p>
         </div>
-        <div class="card card-green" data-step="2">
-          <h3>"We're moving to the cloud."</h3>
-          <p>CIS v8 removed perimeter assumptions. Safeguard 1.1 includes cloud instances. Controls 15.1-15.2 cover service providers. CIS publishes benchmarks for AWS, Azure, GCP, and M365.</p>
+        <div class="card card--fern" data-step="2">
+          <div class="card__title">"We're moving to the cloud."</div>
+          <p class="card__body">CIS v8 removed perimeter assumptions. Safeguard 1.1 includes cloud instances. Controls 15.1-15.2 cover service providers. CIS publishes benchmarks for AWS, Azure, GCP, and M365.</p>
         </div>
-        <div class="card card-amber" data-step="3">
-          <h3>"How do we handle remote/hybrid?"</h3>
-          <p>MFA for external apps (6.3), remote access (6.4), endpoint encryption (3.6), DNS filtering (9.2), session locking (4.3). All IG1. You probably have most of these. Now document it.</p>
+        <div class="card card--amber" data-step="3">
+          <div class="card__title">"How do we handle remote/hybrid?"</div>
+          <p class="card__body">MFA for external apps (6.3), remote access (6.4), endpoint encryption (3.6), DNS filtering (9.2), session locking (4.3). All IG1. You probably have most of these. Now document it.</p>
         </div>
-        <div class="card card-green" data-step="4">
-          <h3>"Are we compliant?"</h3>
-          <p>Don't answer framework by framework. Map your CIS implementation to every framework simultaneously using the free Controls Navigator. One program, many compliance artifacts.</p>
+        <div class="card card--fern" data-step="4">
+          <div class="card__title">"Are we compliant?"</div>
+          <p class="card__body">Don't answer framework by framework. Map your CIS implementation to every framework simultaneously using the free Controls Navigator. One program, many compliance artifacts.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       S14: Real Organizations
-       ========================================== -->
-  <section id="s14" class="slide light" data-section-label="Real Organizations">
-    <div class="container">
-      <h2 class="section-headline dark">Parks that actually opened safely.</h2>
+  <!-- S14: Real Organizations -->
+  <section class="slide slide--light" data-section-label="Real Organizations">
+    <div class="deck-container">
+      <h2 class="headline headline--dark">Parks that actually opened safely.</h2>
       <div class="testimonials">
         <div class="testimonial" data-step="1">
-          <h3>Large Midwestern Credit Union <span>(200K+ members)</span></h3>
+          <h3 class="testimonial__org">Large Midwestern Credit Union <span>(200K+ members)</span></h3>
           <blockquote>"The CIS Controls are the primary tool to determine what we need to do first and extremely valuable from a strategy standpoint."</blockquote>
           <p>Built risk burn-down scorecards. Aligned CIS with FFIEC.</p>
         </div>
         <div class="testimonial" data-step="2">
-          <h3>City of Portland, Oregon</h3>
-          <blockquote>"Haphazard and reactive… little systematic thinking." (Pre-CIS)</blockquote>
+          <h3 class="testimonial__org">City of Portland, Oregon</h3>
+          <blockquote>"Haphazard and reactive&hellip; little systematic thinking." (Pre-CIS)</blockquote>
           <p>Two controls per year from 2011. Fewer infections, common vocabulary, savings funded the next phase.</p>
         </div>
         <div class="testimonial" data-step="3">
-          <h3>BMW Group <span>(159K employees, 140+ countries)</span></h3>
+          <h3 class="testimonial__org">BMW Group <span>(159K employees, 140+ countries)</span></h3>
           <p>Integrated all CIS Implementation Groups since 2022. CIS Controls Navigator for cross-framework mapping.</p>
         </div>
       </div>
-      <p class="source-line" data-step="3">Source: Published CIS case studies at cisecurity.org</p>
+      <p class="source" data-step="3">Source: Published CIS case studies at cisecurity.org</p>
     </div>
   </section>
 
-  <!-- ==========================================
-       S15: Board Statement
-       ========================================== -->
-  <section id="s15" class="slide light" data-section-label="Board Statement">
-    <div class="container">
-      <h2 class="section-headline dark">The board wants a number. Give them this.</h2>
+  <!-- S15: Board Statement -->
+  <section class="slide slide--light" data-section-label="Board Statement">
+    <div class="deck-container">
+      <h2 class="headline headline--dark">The board wants a number. Give them this.</h2>
       <div class="maturity-steps" data-step="1" role="list">
-        <div class="maturity-step" role="listitem"><div class="step-bar amber-bar-solid"></div><p>1. Policy Defined</p></div>
-        <div class="maturity-step" role="listitem"><div class="step-bar green-bar-solid"></div><p>2. Control Implemented</p></div>
-        <div class="maturity-step" role="listitem"><div class="step-bar blue-bar-solid"></div><p>3. Control Automated</p></div>
-        <div class="maturity-step" role="listitem"><div class="step-bar dkgreen-bar-solid"></div><p>4. Control Reported</p></div>
+        <div class="maturity-step" role="listitem"><div class="maturity-step__bar maturity-step__bar--amber"></div><p>1. Policy Defined</p></div>
+        <div class="maturity-step" role="listitem"><div class="maturity-step__bar maturity-step__bar--fern"></div><p>2. Control Implemented</p></div>
+        <div class="maturity-step" role="listitem"><div class="maturity-step__bar maturity-step__bar--sky"></div><p>3. Control Automated</p></div>
+        <div class="maturity-step" role="listitem"><div class="maturity-step__bar maturity-step__bar--dark"></div><p>4. Control Reported</p></div>
       </div>
-      <div class="board-template" data-step="2">
-        <div class="board-template-header">COPY THIS. USE IT. THANK ME LATER.</div>
-        <blockquote class="board-template-text">
+      <div class="board-box" data-step="2">
+        <div class="board-box__header">Copy this. Use it. Thank me later.</div>
+        <blockquote class="board-box__text">
           "The organization has implemented <strong>[X] of 56</strong> IG1 safeguards (<strong>[Y]%</strong>). Of those implemented, <strong>[Z]%</strong> have a maturity rating of 'Generally Effective' or higher. This brings the overall cybersecurity residual risk to <strong>[Moderate/Low]</strong>, which is within the Board's defined Risk Appetite."
         </blockquote>
       </div>
@@ -450,77 +420,73 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       S16: Oregon Trail Store
-       ========================================== -->
-  <section id="s16" class="slide dark" data-section-label="Free Tools">
-    <div class="container">
-      <h2 class="section-headline oregon-style">"You have $0. What do you buy at the general store?"</h2>
-      <p class="section-sub">Everything you need to start is free.</p>
+  <!-- S16: Oregon Trail Store -->
+  <section class="slide slide--dark" data-section-label="Free Tools">
+    <div class="deck-container">
+      <h2 class="headline headline--oregon">"You have $0. What do you buy at the general store?"</h2>
+      <p class="subhead">Everything you need to start is free.</p>
       <div class="tools-grid">
         <div class="tool-card" data-step="1">
-          <div class="tool-price">$0</div>
-          <h3>CIS Controls Navigator</h3>
-          <p>Free interactive crosswalk. Map your implementation to 25+ frameworks simultaneously.</p>
+          <div class="tool-card__price">$0</div>
+          <h3 class="tool-card__name">CIS Controls Navigator</h3>
+          <p class="tool-card__desc">Free interactive crosswalk. Map your implementation to 25+ frameworks simultaneously.</p>
         </div>
         <div class="tool-card" data-step="2">
-          <div class="tool-price">$0</div>
-          <h3>CIS CSAT (Free Tier)</h3>
-          <p>Self-assessment, four maturity dimensions, peer benchmarking, and board reporting output.</p>
+          <div class="tool-card__price">$0</div>
+          <h3 class="tool-card__name">CIS CSAT (Free Tier)</h3>
+          <p class="tool-card__desc">Self-assessment, four maturity dimensions, peer benchmarking, and board reporting output.</p>
         </div>
         <div class="tool-card" data-step="3">
-          <div class="tool-price">$0</div>
-          <h3>CIS-CAT Lite</h3>
-          <p>Automated configuration scanning against CIS Benchmarks. Find misconfigs before attackers do.</p>
+          <div class="tool-card__price">$0</div>
+          <h3 class="tool-card__name">CIS-CAT Lite</h3>
+          <p class="tool-card__desc">Automated configuration scanning against CIS Benchmarks. Find misconfigs before attackers do.</p>
         </div>
         <div class="tool-card" data-step="4">
-          <div class="tool-price">$0</div>
-          <h3>CIS WorkBench</h3>
-          <p>Community resources, benchmark downloads, GPOs and scripts. Everything in one place.</p>
+          <div class="tool-card__price">$0</div>
+          <h3 class="tool-card__name">CIS WorkBench</h3>
+          <p class="tool-card__desc">Community resources, benchmark downloads, GPOs and scripts. Everything in one place.</p>
         </div>
       </div>
-      <p class="source-line" data-step="4" style="text-align:center;margin-top:1.5rem;">cisecurity.org</p>
+      <p class="source" data-step="4" style="text-align:center;margin-top:1.5rem;">cisecurity.org</p>
     </div>
   </section>
 
-  <!-- ==========================================
-       S17: 90-Day Trail
-       ========================================== -->
-  <section id="s17" class="slide light" data-section-label="90-Day Plan">
-    <div class="container">
-      <h2 class="section-headline dark">The trail to IG1.</h2>
-      <p class="section-sub dark-sub">Typical IG1 implementation: 3 to 6 months. Here's how to start this week.</p>
-      <div class="trail-timeline">
+  <!-- S17: 90-Day Trail -->
+  <section class="slide slide--light" data-section-label="90-Day Plan">
+    <div class="deck-container deck-container--top">
+      <h2 class="headline headline--dark">The trail to IG1.</h2>
+      <p class="subhead">Typical IG1 implementation: 3 to 6 months. Here's how to start this week.</p>
+      <div class="trail">
         <div id="trail-line" aria-hidden="true"></div>
-        <div class="trail-stop" data-step="1">
-          <div class="stop-dot amber-dot"></div>
-          <div class="stop-content">
-            <span class="stop-week">Week 1–2</span>
-            <h3 class="stop-place">Independence, MO</h3>
+        <div class="trail__stop" data-step="1">
+          <div class="trail__dot trail__dot--amber"></div>
+          <div>
+            <span class="trail__week">Week 1&ndash;2</span>
+            <h3 class="trail__place">Independence, MO</h3>
             <p>Download CIS CSAT. Run the self-assessment for IG1. Don't inflate scores. This is your baseline.</p>
           </div>
         </div>
-        <div class="trail-stop" data-step="2">
-          <div class="stop-dot green-dot"></div>
-          <div class="stop-content">
-            <span class="stop-week">Week 3–4</span>
-            <h3 class="stop-place">Fort Kearney</h3>
+        <div class="trail__stop" data-step="2">
+          <div class="trail__dot trail__dot--fern"></div>
+          <div>
+            <span class="trail__week">Week 3&ndash;4</span>
+            <h3 class="trail__place">Fort Kearney</h3>
             <p>Controls 1 &amp; 2. Build or enrich your asset and software inventory. Spreadsheet? Admit it and start the migration.</p>
           </div>
         </div>
-        <div class="trail-stop" data-step="3">
-          <div class="stop-dot amber-dot"></div>
-          <div class="stop-content">
-            <span class="stop-week">Week 5–8</span>
-            <h3 class="stop-place">Chimney Rock</h3>
+        <div class="trail__stop" data-step="3">
+          <div class="trail__dot trail__dot--amber"></div>
+          <div>
+            <span class="trail__week">Week 5&ndash;8</span>
+            <h3 class="trail__place">Chimney Rock</h3>
             <p>Controls 4, 5, 6. Run CIS-CAT Lite. Enforce MFA everywhere external. Inventory service accounts. Disable anything dormant.</p>
           </div>
         </div>
-        <div class="trail-stop" data-step="4">
-          <div class="stop-dot green-dot"></div>
-          <div class="stop-content">
-            <span class="stop-week">Week 9–12</span>
-            <h3 class="stop-place">Oregon City</h3>
+        <div class="trail__stop" data-step="4">
+          <div class="trail__dot trail__dot--fern"></div>
+          <div>
+            <span class="trail__week">Week 9&ndash;12</span>
+            <h3 class="trail__place">Oregon City</h3>
             <p>Re-run CSAT. Show progress using the board statement template. Map IG1 to PCI DSS and NIST CSF. You've arrived.</p>
           </div>
         </div>
@@ -529,26 +495,24 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       S18: Closing
-       ========================================== -->
-  <section id="s18" class="slide dark hero-slide closing" data-section-label="Closing">
-    <div class="hero-bg-placeholder closing-bg" aria-hidden="true" data-prompt="Jurassic Park gate at dawn, golden sunrise, mist clearing through jungle trees, hopeful cinematic mood, 16:9, painted film style"></div>
-    <div class="hero-overlay closing-overlay" aria-hidden="true"></div>
-    <div class="closing-content">
-      <h2 class="closing-title section-headline">Life finds a way. So do attackers.</h2>
-      <p class="closing-body section-sub">But if you know what you have, harden what exists, and prove it in a language everyone understands, you can actually run the park.</p>
-      <div class="hazard-stripe" style="margin:2rem 0;" aria-hidden="true" data-step="1"></div>
-      <p class="closing-thanks" data-step="1">Thank you</p>
-      <p class="closing-author" data-step="1">Griffin Cass &nbsp;|&nbsp; Information Security Architect &nbsp;|&nbsp; UW Credit Union</p>
-      <div class="closing-resources" data-step="2">
-        <p class="resources-label">Key Resources</p>
-        <p>cisecurity.org/controls &nbsp;•&nbsp; CIS Controls Navigator &nbsp;•&nbsp; CIS CSAT &nbsp;•&nbsp; CIS-CAT Lite</p>
+  <!-- S18: Closing -->
+  <section class="slide slide--dark slide--closing" data-section-label="Closing">
+    <div class="closing__bg" aria-hidden="true"></div>
+    <div class="closing__overlay" aria-hidden="true"></div>
+    <div class="closing__content">
+      <h2 class="closing__title headline">Life finds a way. So do attackers.</h2>
+      <p class="closing__body subhead">But if you know what you have, harden what exists, and prove it in a language everyone understands, you can actually run the park.</p>
+      <div class="hazard hazard--full" aria-hidden="true" data-step="1"></div>
+      <p class="closing__thanks" data-step="1">Thank you</p>
+      <p class="closing__author" data-step="1">Griffin Cass &nbsp;|&nbsp; Information Security Architect &nbsp;|&nbsp; UW Credit Union</p>
+      <div class="closing__resources" data-step="2">
+        <p class="closing__resources-label">Key Resources</p>
+        <p>cisecurity.org/controls &nbsp;&bull;&nbsp; CIS Controls Navigator &nbsp;&bull;&nbsp; CIS CSAT &nbsp;&bull;&nbsp; CIS-CAT Lite</p>
       </div>
     </div>
   </section>
 
-</main><!-- #deck -->
+</main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="js/script.js"></script>
